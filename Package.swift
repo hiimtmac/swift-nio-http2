@@ -64,7 +64,6 @@ let package = Package(
             name: "NIOHTTP2",
             dependencies: [
                 "NIOHPACK",
-                .product(name: "NIO", package: "swift-nio"),
                 .product(name: "NIOCore", package: "swift-nio"),
                 .product(name: "NIOHTTP1", package: "swift-nio"),
                 .product(name: "NIOTLS", package: "swift-nio"),
@@ -76,7 +75,6 @@ let package = Package(
         .target(
             name: "NIOHPACK",
             dependencies: [
-                .product(name: "NIO", package: "swift-nio"),
                 .product(name: "NIOCore", package: "swift-nio"),
                 .product(name: "NIOConcurrencyHelpers", package: "swift-nio"),
                 .product(name: "NIOHTTP1", package: "swift-nio"),
